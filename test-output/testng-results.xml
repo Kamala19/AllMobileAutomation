@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="11" passed="11" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-09-15T15:38:02 IST" name="Default suite" finished-at="2022-09-15T15:38:10 IST" duration-ms="7692">
+    <groups>
+    </groups>
+    <test started-at="2022-09-15T15:38:02 IST" name="Default test" finished-at="2022-09-15T15:38:10 IST" duration-ms="7692">
+      <class name="Signup">
+        <test-method signature="launchBrowser()[pri:1, instance:Signup@6d4e5011]" started-at="2022-09-15T15:38:02 IST" name="launchBrowser" finished-at="2022-09-15T15:38:06 IST" duration-ms="3694" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="clickOnSignUp()[pri:2, instance:Signup@6d4e5011]" started-at="2022-09-15T15:38:06 IST" name="clickOnSignUp" finished-at="2022-09-15T15:38:06 IST" duration-ms="710" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnSignUp -->
+        <test-method signature="enterFirstName()[pri:3, instance:Signup@6d4e5011]" started-at="2022-09-15T15:38:06 IST" name="enterFirstName" finished-at="2022-09-15T15:38:06 IST" duration-ms="148" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterFirstName -->
+        <test-method signature="enterLastName()[pri:4, instance:Signup@6d4e5011]" started-at="2022-09-15T15:38:06 IST" name="enterLastName" finished-at="2022-09-15T15:38:07 IST" duration-ms="83" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterLastName -->
+        <test-method signature="enterMail()[pri:5, instance:Signup@6d4e5011]" started-at="2022-09-15T15:38:07 IST" name="enterMail" finished-at="2022-09-15T15:38:07 IST" duration-ms="170" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterMail -->
+        <test-method signature="enterPassword()[pri:6, instance:Signup@6d4e5011]" started-at="2022-09-15T15:38:07 IST" name="enterPassword" finished-at="2022-09-15T15:38:07 IST" duration-ms="81" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterPassword -->
+        <test-method signature="enterDOB()[pri:7, instance:Signup@6d4e5011]" started-at="2022-09-15T15:38:07 IST" name="enterDOB" finished-at="2022-09-15T15:38:07 IST" duration-ms="82" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterDOB -->
+        <test-method signature="selectGender()[pri:8, instance:Signup@6d4e5011]" started-at="2022-09-15T15:38:07 IST" name="selectGender" finished-at="2022-09-15T15:38:07 IST" duration-ms="72" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectGender -->
+        <test-method signature="enterPhoneNumber()[pri:9, instance:Signup@6d4e5011]" started-at="2022-09-15T15:38:07 IST" name="enterPhoneNumber" finished-at="2022-09-15T15:38:07 IST" duration-ms="82" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterPhoneNumber -->
+        <test-method signature="clickOnRegister()[pri:10, instance:Signup@6d4e5011]" started-at="2022-09-15T15:38:07 IST" name="clickOnRegister" finished-at="2022-09-15T15:38:09 IST" duration-ms="2179" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnRegister -->
+        <test-method signature="clickOnSignIn()[pri:11, instance:Signup@6d4e5011]" started-at="2022-09-15T15:38:09 IST" name="clickOnSignIn" finished-at="2022-09-15T15:38:10 IST" duration-ms="324" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnSignIn -->
+      </class> <!-- Signup -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
