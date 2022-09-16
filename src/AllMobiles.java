@@ -18,7 +18,7 @@ public class AllMobiles {
 	@Test(priority = 1)
 	public void launchBrowser() throws InterruptedException {
 		driver = new ChromeDriver();
-		driver.get("https://mobileworld.azurewebsites.net/");
+		driver.get("https://mobileworld.banyanpro.com/");
 	}
 	@Test(priority = 2)
 	public void allMobiles() throws InterruptedException {
