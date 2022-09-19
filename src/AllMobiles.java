@@ -19,6 +19,7 @@ public class AllMobiles {
 	public void launchBrowser() throws InterruptedException {
 		driver = new ChromeDriver();
 		driver.get("https://mobileworld.banyanpro.com/");
+		Thread.sleep(1000);
 	}
 	@Test(priority = 2)
 	public void allMobiles() throws InterruptedException {
@@ -29,41 +30,47 @@ public class AllMobiles {
 			String abc = n1.getText();
 			if (abc.contains("Mobile Name")) {
 				Assert.assertTrue(true);
+				Thread.sleep(2000);
 			}
 		}
 	}
 	@Test(priority = 3)
-	public void searchLenovo() {
+	public void searchLenovo() throws InterruptedException {
 		driver.findElement(By.id("myInput")).sendKeys("Lenovo");
 		String mobName = driver.findElement(By.xpath("//tbody[@id='myTable']/tr[4]/td[1]")).getText();
 		Assert.assertTrue(mobName.contains("Lenovo"));
+		Thread.sleep(4000);
 		driver.findElement(By.id("myInput")).clear();
-		}
+			}
 	@Test(priority = 4)
-	public void searchSamsung() {
+	public void searchSamsung() throws InterruptedException {
 		driver.findElement(By.id("myInput")).sendKeys("Samsung");
 		String mobName = driver.findElement(By.xpath("//th[text()='Mobile Name']/../../../tbody/tr/td")).getText();
 		Assert.assertTrue(mobName.contains("Samsung"));
+		Thread.sleep(4000);
 		driver.findElement(By.id("myInput")).clear();
-		}
+}
 	@Test(priority = 5)
-	public void wrongApple() {
+	public void Apple() throws InterruptedException {
 		driver.findElement(By.id("myInput")).sendKeys("Apple iphone ");
+		Thread.sleep(4000);
 		// We cannot assert statement here because no error message is displayed
 		driver.findElement(By.id("myInput")).clear();
+		
 	    }
 	//@Test(priority = 6)
-	//public void wrongSamsung() {
-		//driver.findElement(By.id("myInput")).sendKeys("S@msung");
-		// We cannot assert statement here because no error message is displayed
-		//driver.findElement(By.id("myInput")).clear();
-	//}
+//	public void wrongSamsung() {
+//		driver.findElement(By.id("myInput")).sendKeys("S@msung");
+//		//We cannot assert statement here because no error message is displayed
+//		driver.findElement(By.id("myInput")).clear();
+//	}
 	
 	@Test(priority = 7)
-	public void twoCharacter() {
+	public void twoCharacter() throws InterruptedException {
 		driver.findElement(By.id("myInput")).sendKeys("Sa");
 		String mobName = driver.findElement(By.xpath("//th[text()='Mobile Name']/../../../tbody/tr/td")).getText();
 		Assert.assertTrue(mobName.contains("Samsung"));
+		Thread.sleep(4000);
 		driver.findElement(By.id("myInput")).clear();
 		}
 	//@Test(priority = 8)
@@ -75,8 +82,9 @@ public class AllMobiles {
 	@Test(priority = 9)
 	public void order() throws InterruptedException {
 		driver.findElement(By.id("myInput")).sendKeys("Samsung Galaxy S21");
-		//Thread.sleep(2000);
+		Thread.sleep(2000);
 		driver.findElement(By.xpath("//tbody/tr[1]/td[5]/a[1]")).click();
+		driver.quit();
 		// We cannot assert statement here because same page is opening again
 	}
 	

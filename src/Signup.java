@@ -58,7 +58,7 @@ public class Signup {
 	@Test(priority = 6)
 	public void enterPassword() throws InterruptedException {
 		driver.findElement(By.xpath("//input[@placeholder='Password']")).sendKeys("kd19");
-		Thread.sleep(2000);
+		Thread.sleep(2000); 
 	}
 	@Test(priority = 7)
 	public void enterDOB() throws InterruptedException {
@@ -84,7 +84,7 @@ public class Signup {
 	}
 	@Test(priority = 11)
 	public void clickOnSignIn() throws InterruptedException {
-		driver.findElement(By.xpath("//button[text()='Sign In']")).click();
+		driver.findElement(By.xpath("//b"+ "utton[text()='Sign In']")).click();
 		//driver.switchTo().alert().accept();
 		driver.quit();
 	}

@@ -3,11 +3,16 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Signin">
+      <class name="AllMobiles">
         <methods>
-          <include name="isUserTestPassed"/>
+          <include name="searchSamsung"/>
+          <include name="wrongApple"/>
+          <include name="wrongSamsung"/>
+          <include name="twoCharacter"/>
+          <include name="searchLenovo"/>
+          <include name="order"/>
         </methods>
-      </class> <!-- Signin -->
+      </class> <!-- AllMobiles -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -5,14 +5,29 @@
     <classes>
       <class name="Signup">
         <methods>
+          <include name="clickOnRegister"/>
+          <include name="enterPhoneNumber"/>
           <include name="clickOnSignIn"/>
+          <include name="selectGender"/>
         </methods>
       </class> <!-- Signup -->
       <class name="AllMobiles">
         <methods>
+          <include name="searchSamsung"/>
+          <include name="wrongApple"/>
+          <include name="twoCharacter"/>
+          <include name="allMobiles"/>
+          <include name="searchLenovo"/>
           <include name="order"/>
         </methods>
       </class> <!-- AllMobiles -->
+      <class name="Signin">
+        <methods>
+          <include name="enterUserName"/>
+          <include name="clickOnLogin"/>
+          <include name="enterPassword"/>
+        </methods>
+      </class> <!-- Signin -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
